@@ -1,0 +1,46 @@
+import proguard.gradle.ProGuardTask
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        flatDir dirs: 'libs'
+    }
+    dependencies {
+        classpath "com.github.jengelman.gradle.plugins:shadow:1.2.2"
+        classpath ':proguard:'
+    }
+}
+
+apply plugin: "com.github.johnrengelman.shadow"
+apply plugin: 'application'
+
+mainClassName = "pl.jereksel.layersbuilder.Main"
+
+dependencies {
+    compile 'commons-io:commons-io:2.4'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'org.json:json:20150729'
+    compile 'com.google.guava:guava:19.0-rc2'
+    compile 'org.zeroturnaround:zt-zip:1.8'
+    testCompile 'junit:junit:4.12'
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+
+task proguard(type: ProGuardTask) {
+   // injars(project.jar.archivePath.getPath())
+    injars(libsDir.path + File.separator + project.name + "-all.jar")
+    outjars(libsDir.path + File.separator + project.name + '.jar')
+    configuration 'proguard.pro'
+}
+
+task buildComplete(dependsOn: [shadowJar, proguard])

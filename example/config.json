@@ -1,0 +1,13 @@
+{
+  "type": "plugin",
+  "plugin_name": "Example UI",
+  "plugin_description": "Example description",
+  "framework_location": "D:\\android-sdk\\platforms\\android-23\\android.jar",
+  "package_name": "com.andrzejressel.test",
+  "overlays": [
+    "General",
+    "Color",
+    "Custom",
+    "Working settings"
+  ]
+}

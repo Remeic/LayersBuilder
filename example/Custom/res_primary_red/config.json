@@ -1,0 +1,9 @@
+{
+  "type": "overlay",
+  "overlay_type": "custom",
+  "style": "Red",
+  "name": "Primary",
+  "target": "com.android.settings",
+  "priority": "55",
+  "auto_install": true
+}

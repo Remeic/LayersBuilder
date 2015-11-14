@@ -1,0 +1,9 @@
+{
+  "type": "overlay",
+  "overlay_type": "color",
+  "color": "Translucent",
+  "name": "Calculator",
+  "target": "calculator",
+  "priority": "10",
+  "auto_install": true
+}

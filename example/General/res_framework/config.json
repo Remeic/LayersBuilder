@@ -1,0 +1,8 @@
+{
+  "type": "overlay",
+  "overlay_type": "general",
+  "name": "Framework for M",
+  "target": "android",
+  "priority": "10",
+  "auto_install": false
+}
