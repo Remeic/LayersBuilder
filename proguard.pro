@@ -2,6 +2,7 @@
 
 -dontobfuscate
 
+-dontwarn org.slf4j.**
 -dontwarn javax.annotation.**
 -dontwarn javax.inject.**
 -dontwarn sun.misc.Unsafe
