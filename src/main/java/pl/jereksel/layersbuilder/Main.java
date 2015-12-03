@@ -94,7 +94,7 @@ public class Main {
             File tempDir = Files.createTempDir();
 
             /*System.out.println("Temp dir: " + tempDir);*/
-        	System.out.println("cdt's Internal LayersBuilder 2.0 - Windows ONLY");
+        	System.out.println("\ncdt's Internal LayersBuilder 2.0 - Windows ONLY");
         	System.out.println("Original library by Andrzej Ressel (jereksel)\n");
 
             File generalFolder = new File(tempDir.getAbsolutePath() + File.separator + "General");
