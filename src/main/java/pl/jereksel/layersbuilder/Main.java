@@ -20,6 +20,8 @@ public class Main {
             throws Exception {
 
         if (args.length == 0 || args.length > 2) {
+        	System.out.println("cdt's Internal LayersBuilder 2.0 - Windows");
+        	System.out.println("Original library by Andrzej Ressel (jereksel)\n");
             System.out.println("Usage: <plugin config> <overlay config (optional)>");
             System.exit(-1);
         }
@@ -92,6 +94,8 @@ public class Main {
             File tempDir = Files.createTempDir();
 
             /*System.out.println("Temp dir: " + tempDir);*/
+        	System.out.println("cdt's Internal LayersBuilder 2.0 - Windows ONLY");
+        	System.out.println("Original library by Andrzej Ressel (jereksel)\n");
 
             File generalFolder = new File(tempDir.getAbsolutePath() + File.separator + "General");
 
