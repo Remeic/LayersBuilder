@@ -122,7 +122,7 @@ public class Overlay {
         InputStream inputStream = compile.getInputStream();
         InputStream errorStream = compile.getErrorStream();
 
-        String inputCompile = IOUtils.toString(inputStream);
+        /*String inputCompile = IOUtils.toString(inputStream);*/
         String errorCompile = IOUtils.toString(errorStream);
 
         compile.waitFor();
@@ -147,7 +147,7 @@ public class Overlay {
         inputStream = compile.getInputStream();
         errorStream = compile.getErrorStream();
 
-        String inputSign = IOUtils.toString(inputStream);
+        /*String inputSign = IOUtils.toString(inputStream);*/
         String errorSign = IOUtils.toString(errorStream);
 
         sign.waitFor();

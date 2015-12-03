@@ -24,8 +24,8 @@ public class Main {
             System.exit(-1);
         }
 
-        File pluginFile;
-        File overlayFile;
+        /*File pluginFile;
+        File overlayFile;*/
 
         List<Overlay> allOverlays = new ArrayList<>();
         List<Overlay> generalOverlays = new ArrayList<>();
@@ -91,7 +91,7 @@ public class Main {
 
             File tempDir = Files.createTempDir();
 
-            System.out.println("Temp dir: " + tempDir);
+            /*System.out.println("Temp dir: " + tempDir);*/
 
             File generalFolder = new File(tempDir.getAbsolutePath() + File.separator + "General");
 
