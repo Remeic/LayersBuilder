@@ -146,6 +146,8 @@ public class Main {
             }
 
             System.out.println("Zip files located in: " + tempDir);
+            System.out.println("Opening compiled folder now...");
+            Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + tempDir);
 
         } else {
             new Overlay(new File(args[1]), new File(args[0])).build(true);
