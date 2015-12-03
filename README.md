@@ -1,4 +1,11 @@
-# LayersBuilder
-[![Circle CI](https://circleci.com/gh/jereksel/LayersBuilder/tree/master.svg?style=svg)](https://circleci.com/gh/jereksel/LayersBuilder/tree/master)
+# cdt's Internal LayersBuilder 2.0
 
-Download: https://www.dropbox.com/s/bcu4q4o6ed2u2p0/LayersBuilder.jar?dl=0
+Based on Jereksel's LayersBuilder idea, this library quiets down all the unnecessary output 
+and allows for third party libraries to incorporate with this modded library to allow for 
+full automation.
+
+What this does:
+- Now tells you when you're running the application with a greeting message
+- Opens tempDir after build/compile/sign allowing you to take out your .zip file immediately
+- Buildable through Eclipse (Mars.1 release (4.5.1) and higher)
+- Quiet down noisy output on command line
