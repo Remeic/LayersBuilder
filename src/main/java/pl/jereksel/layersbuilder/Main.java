@@ -149,8 +149,8 @@ public class Main {
                 FileUtils.deleteDirectory(file);
             }
 
-            System.out.println("Zip files located in: " + tempDir);
-            System.out.println("Opening compiled folder now...");
+            /*System.out.println("Zip files located in: " + tempDir);*/
+            System.out.println("\nBuild complete.\n\nYou can now move the .zip out of the temporary folder.");
             Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + tempDir);
 
         } else {
